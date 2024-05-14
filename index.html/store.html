@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="button">
+        <a href="homepage.html">
+            <img src="back-button.png">
+        </a>
+    </div>
+
+    <!--First Row-->
+    <div class="w3-row-padding">
+        <div class="pic">
+          <img src="coke.png" style="width:100%" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+          <img src="matcha.png" style="width:100%" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+            <img src="strawberry-drink.png" style="width:160%" height="100" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+            <img src="lipton.png" style="width:100%" margin-inline="%" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+            <img src="water.png" style="width:100%" onclick="onClick(this)">
+            </div>
+    </div>
+
+    <!--Second Row-->
+    <div class="w3-row-padding">
+        <div class="pic">
+          <img src="cake1.png" style="width:100%" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+            <img src="cake2.png" style="width:100%" onclick="onClick(this)">
+          </div>
+        <div class="pic">
+            <img src="cake3.png" style="width:100%" onclick="onClick(this)">
+          </div>
+        <div class="pic">
+            <img src="yakult.png" style="width:100%" onclick="onClick(this)">
+          </div>
+        <div class="pic">
+            <img src="taho.png" style="width:100%" onclick="onClick(this)">
+          </div>
+        <div class="pic">
+            <img src="can.png" style="width:100%" oncl ick="onClick(this)">
+          </div>
+    </div>
+
+    <!--Third Row-->
+    <div class="w3-row-padding">
+        <div class="pic">
+          <img src="isaw.png" style="width:100%" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+            <img src="bbq.png" style="width:100%" onclick="onClick(this)">
+            </div>
+        <div class="pic">
+            <img src="kwekwek.png" style="width:100%" onclick="onClick(this)">
+            </div>
+    
+    <!--Modal-->
+    <div id="modal01" class="store-modal" onclick="this.style.display='none'">&times;</span>
+        <img class="store-modal-content" id="img01" style="max-width: 50%; max-height: 50%; ">
+    </div>
+      
+      <script>
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body class="letter">
+    <div class="button">
+        <a href="homepage.html">
+            <img src="back-button.png">
+        </a>
+    </div>
+
+    <div class="you">
+        <img src="mouse.gif">
+    </div>
+    
+    <div id="confirmation" style="text-align: center;">
+        <p>Do you want to read the letter?</p>
+        <button onclick="startTyping()">Yess!</button>
+      </div>
+    
+      <div class="typing-container" id="typing-container">
+        <div id="typing-text" class="typing-animation"></div>
+      </div>
+    
+      <script>
+        function startTyping() {
+          document.getElementById('confirmation').style.display = 'none'; // Hide the confirmation
+          document.getElementById('typing-container').style.display = 'block'; // Show the typing container
+    
+          const text = "Happy Happy Birthday to my bootyful/pretea/gorejas baby!!\n Today is the day you were born, bae, aren't you happy?? whatever.\nCelebrating your Birthday may not be your thing, but I couldn't let this day pass without expressing just how much you mean to me.\nBaby, I witness how strong you are and I'm proud of you for overcoming every hardship that life throws at you.\nI keep saying that I am always here by your side but I hope I'll be able to \nbe there at your side and hug you whenever you're having a difficult time.\nI know you're capable of doing everything alone but I want to be there with you not\nbecause you need me, it's because I'm here na.\nI'm here now so you won't have to go through everything alone anymore.\nIf you don't want to eat, I won't eat, akala mo ah.\nBaby, I wish you all the best things in life and many more happy moments.\nI will keep trying to make you smile and to make your time well spent with me, pero kapag nabored ka bae\nmagtiis ka na lang kasi wala kang choice. I want to assure you po that no matter what happens,\nI'm here to support you, to laugh or cry with you, and to celebrate your achievement, big or small.\nI enjoy your presence and love to be your 'bae', I admire you so much.\nMore than that, what matters is that you know how loved and cherished you are,\nnot just today, but every single day. Thank you for being you, bae. To all the love you give,\nand for making every day better by just existing.\nI want to help make your life bearable, so don't ever hesitate to reach out to me, baby.\nI love you and all I want is for you to be happy. Let's be grateful po for every +1 sa age natin\nbecause there are still people wanting to celebrate your birthday with you. IM ONE OF THEM!\nI hope we can celebrate our birthday together. soon. iloveyouuu, bae.";
+          let index = 0;
+    
+          function typeText() {
+            if (index < text.length) {
+              document.getElementById('typing-text').textContent += text.charAt(index);
+              index++;
+              setTimeout(typeText, 100); // Adjust typing speed (in milliseconds)
+            }
+          }
+    
+          typeText();
+        }
+      </script>
+    <div class="me">
+        <img src="me.png">
+    </div>
+
+</body>
+</html>
